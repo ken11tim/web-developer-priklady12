@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dvojstlpcovy layout webu opakovanie</title>
+  <style>
+    .hlavny {
+      display: flex;
+      flex-direction: column;
+      background-color: cornflowerblue;
+      padding: 50px; /* vnutorny okraj kontajnera*/
+      /*  height: 100%;*/
+      /*width: 50%;*/
+      /*programatorska poznamka*/
+      /* TODO nastavit vysku boxu */
+    }
+    .hlavicka, .patka{
+        background-color: turquoise;
+        height: 100px;
+    }
+    .patka {
+        margin-top: 20px;
+    }
+    .telo {
+        background-color: blank;
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+    }
+    .lavy {
+        background-color: green;
+        width: 30%;
+        height: 400px;
+        margin-right: 20px;
+    }
+    .pravy {
+        background-color: orange;
+        width: 70%;
+        padding-top: 200px;
+        padding-right: 30px;
+        padding-left: 50px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+    .pravypod {
+        background-color: pink;
+        width: 100%;
+        margin-right: 30px;
+
+    }
+    .obrazok {
+
+    }
+  </style>
+</head>
+<body>
+  <div class="hlavny">
+      <header class="hlavicka">nejaka hlavicka</header>
+      <div class="telo">
+          <div class="lavy">lavy box Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequuntur eius fuga hic id, incidunt nemo officia pariatur perspiciatis porro possimus quae recusandae saepe sed sunt veniam veritatis voluptates voluptatum.</div>
+          <div class="pravy">
+              <div class="pravypod"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+              <div class="pravypod"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora?</div>
+              <div class="pravypod"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, voluptate.</div>
+          </div>
+
+      </div>
+      <footer class="patka">
+
+      </footer>
+      <div>
+          <img src="../images/logo.jpg" >
+      </div>
+  </div>
+</body>
+</html>

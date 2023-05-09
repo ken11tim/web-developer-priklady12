@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>Najpouzivanejsie CSS prikazy</title>
+    <style>
+    .cervena {
+            color: red;
+    }
+    .pismo {
+        font-family: "Arial Black";
+    }
+    .velkost-pisma {
+        font-size: 20px;
+    }
+    .oranzove-pozadie {
+        background-color: darkorange;
+    }
+    .vonkajsi-horny-okraj {
+        margin-top: -20px;
+    }
+    .prvykontajner {
+        background-color:crimson;
+        width:400px;
+        height:300px;
+    }
+    .druhykontajner {
+        background-color:#21dc14;
+        width:400px;
+        height:300px;
+        margin-top:0px
+    }
+    .tretikontajner {
+        background-color:#254a81;
+        width:400px;
+        height:300px
+    }
+    #oramovanytext {
+        border: 1px solid black;
+    }
+    #oramovanytextdetail {
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+    }
+    </style>
+</head>
+<!--
+Úloha na ukážku základných CSS a HTML príkazov
+CSS (Cascading Style Sheets) je jazyk, ktorý sa používa na formátovanie webových stránok. Tu je zoznam najpoužívanejších CSS príkazov:
+
+OK color - Nastavuje farbu textu.
+OK font-family - Nastavuje typ písma.
+OK font-size - Nastavuje veľkosť písma.
+OK background-color - Nastavuje farbu pozadia.
+OK margin - Nastavuje okraje (horný, dolný, ľavý, pravý) elementu.
+OK padding - Nastavuje vnútorný priestor (horný, dolný, ľavý, pravý) elementu.
+border - Nastavuje hrúbku, typ a farbu ohraničenia elementu.
+text-align - Nastavuje zarovnanie textu.
+float - Nastavuje, na ktorú stranu má byť element zarovnaný (napr. vľavo alebo vpravo).
+display - Nastavuje spôsob, ako sa element zobrazí (napr. ako blokový alebo riadkový element).
+-->
+<body>
+  <p class="cervena">toto je text cervenou farbou</p>
+  <p class="pismo">Toto je text vypisany fontom arial black modrou farbou</p>
+  <p class="velkost-pisma">toto je text velkosti 25px</p>
+  <p class="oranzove-pozadie"> text s oranzovym pozadim</p>
+  <p class="vonkajsi-horny-okraj">nejaky text</p>
+
+    <div class="prvykontajner">
+      <!--div sluzi na to aby sme donho ulozili rozny obsah-->
+    <p>prvy kontajner (div)</p>
+    <img src="Slovakia_general_relief_map.svg.png" style="width:50%; height:50%; margin-left:40px" alt="mapa slovenska" >
+  </div>
+
+  <div class="druhykontajner">
+  <p style="padding:40px">druhy kontajner </p>
+  </div>
+
+  <div class="tretikontajner">
+  <p style="padding: 40px 50px 60px 70px">treti kontajner</p>
+  </div>
+
+  <p id="oramovanytext">text oramovany</p>
+
+  <p id="oramovanytextdetail">text oramovany pouzitim jednot. css border prikazov</p>
+
+  <div style="text-align: center; background-color: chocolate; margin-top: -20px">
+  <p>vycentrovany text</p>
+  <img src="Slovakia_general_relief_map.svg.png" alt="mapa slovenska" style="width:50%; height:50%;">
+  </div>
+
+  <div>
+      <div style="background-color: red; width:250px; height: 250px; float: right">
+        prvy kontajner
+      </div>
+
+      <div style="background-color: green; width:250px; height: 250px; float: right">
+        druhy kontajner
+      </div>
+
+      <div style="background-color: blue; width:250px; height: 250px; float: right">
+        treti kontajner
+      </div>
+  </div>
+
+  <!--vyresetujem poziciu pre dalsi element na stranke-->
+
+  <br style="clear: both;">
+
+  <!--pevna medzera je reprezentovana HTML entitou &nbsp-->
+
+  <p style="">Toto je 5 medzier &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; za ktorými pokračuje tento text.</p>
+
+</body>
+</html>

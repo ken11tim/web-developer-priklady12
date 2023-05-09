@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><title>garnat</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!--link rel="shortcut icon" href="/favicon.png" type="image/x-icon" /-->
+    <link rel="shortcut icon" href="/favicon.png" type="image/png"/>
+    <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+    <META HTTP-EQUIV="Expires" CONTENT="-1">
+    <style type="text/css"><!--
+    @import "/styles/default/_main.css";
+    --></style>
+    <style type="text/css"><!--
+    @import "/styles/default/_awm.css";
+    --></style>
+    <style type="text/css"><!--
+    @import "/styles/default/_tables.css";
+    --></style>
+    <script type="text/javascript" src="/?/translations.js"></script>
+    <script type="text/javascript" src="/js/soundmanager.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script type="text/javascript" src="/js/xmlhttp.js"></script>
+    <script type="text/javascript"> loadScript({
+        "name": "actions_log",
+        "url": "/js/actions_log.js?",
+        "cache": "sc_actions_log",
+        "onSuccess": "eval(this.XHO.responseText);",
+        "canRetry": true,
+        "raw": true,
+        "hint": "Načítám skript 'actions_log'..."
+    });
+    loadScript({
+        "name": "json",
+        "url": "/js/json.js?",
+        "cache": "sc_json",
+        "onSuccess": "eval(this.XHO.responseText);",
+        "canRetry": true,
+        "raw": true,
+        "hint": "Načítám skript 'json'..."
+    });
+    loadScript({
+        "name": "awm",
+        "url": "/js/awm.js?",
+        "cache": "sc_awm",
+        "onSuccess": "eval(this.XHO.responseText);",
+        "canRetry": true,
+        "raw": true,
+        "hint": "Načítám skript 'awm'..."
+    });
+    loadScript({
+        "name": "form_designer",
+        "url": "/js/form_designer.js?",
+        "cache": "sc_form_designer",
+        "onSuccess": "eval(this.XHO.responseText);",
+        "canRetry": true,
+        "raw": true,
+        "hint": "Načítám skript 'form designer'..."
+    });
+    loadScript({
+        "name": "left_menu",
+        "url": "/js/left_menu.js?",
+        "cache": "sc_left_menu",
+        "onSuccess": "eval(this.XHO.responseText); top.document.getElementById('topMenu').style.display='block';",
+        "canRetry": true,
+        "raw": true,
+        "hint": "Načítám skript 'left menu'..."
+    });
+    loadScript({
+        "name": "app_common",
+        "url": "/js/app_common.js?",
+        "cache": "sc_app_common",
+        "onSuccess": "eval(this.XHO.responseText);",
+        "canRetry": true,
+        "raw": true,
+        "hint": "Načítám skript 'app_common'..."
+    });
+    loadScript({
+        "name": "preload_cache",
+        "url": "/js/preload_cache.js?",
+        "cache": "sc_preload_cache",
+        "onSuccess": "eval(this.XHO.responseText);",
+        "canRetry": true,
+        "raw": true,
+        "hint": "Načítám skript 'preload_cache'..."
+    }); </script>
+</head>
+<body>
+<div id="topMenuBack"></div>
+<DIV id="topMenu">
+    <DIV class="tabs" style="float:left"><A tid="worksheet" loadscript="app_worksheet" mnu="/?/worksheet/left_menu"
+                                            tab="/?/worksheet/tab">Worksheet</A></DIV>
+    <IMG src="/styles/default/spacer.gif" class="spacer" style="width:1em"/><SPAN class="login_info"><img
+        src="/styles/default/flag_cz_hover.png" title="topMnuInCZ" srcDefault="/styles/default/flag_cz.png"
+        srcHover="/styles/default/flag_cz_hover.png" lang="cz" class="hilight" onmouseover="langMenuHilight(this)"
+        onmouseout="langMenuDarken(this)" onclick="document.location='/?lang=cz'"><img src="/styles/default/flag_en.png"
+                                                                                       title="topMnuInEN"
+                                                                                       srcDefault="/styles/default/flag_en.png"
+                                                                                       srcHover="/styles/default/flag_en_hover.png"
+                                                                                       lang="en"
+                                                                                       onmouseover="langMenuHilight(this)"
+                                                                                       onmouseout="langMenuDarken(this)"
+                                                                                       onclick="document.location='/?lang=en'"><img
+        src="/styles/default/flag_fr.png" title="topMnuInFR" srcDefault="/styles/default/flag_fr.png"
+        srcHover="/styles/default/flag_fr_hover.png" lang="fr" onmouseover="langMenuHilight(this)"
+        onmouseout="langMenuDarken(this)" onclick="document.location='/?lang=fr'"> přihlášený uživatel Kendra, Timotej&nbsp;&nbsp;<A
+        href="?/logout">Odhlášení</A></SPAN></DIV>
+<div id="leftMenu"><img class="leftMenuPin" src="/styles/default/awm_pinned_on.gif" title="Odemknout"/></div>
+<DIV id="contentWrap">
+    <DIV id="content"></DIV>
+</DIV>
+<script type="text/javascript">soundManagerInit();</script>
+</body>
+</html> a

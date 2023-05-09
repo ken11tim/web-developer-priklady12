@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>Najpouzivanejsie CSS prikazy</title>
+</head>
+<!--
+Úloha na ukážku základných CSS a HTML príkazov
+CSS (Cascading Style Sheets) je jazyk, ktorý sa používa na formátovanie webových stránok. Tu je zoznam najpoužívanejších CSS príkazov:
+
+OK color - Nastavuje farbu textu.
+OK font-family - Nastavuje typ písma.
+OK font-size - Nastavuje veľkosť písma.
+OK background-color - Nastavuje farbu pozadia.
+OK margin - Nastavuje okraje (horný, dolný, ľavý, pravý) elementu.
+OK padding - Nastavuje vnútorný priestor (horný, dolný, ľavý, pravý) elementu.
+border - Nastavuje hrúbku, typ a farbu ohraničenia elementu.
+text-align - Nastavuje zarovnanie textu.
+float - Nastavuje, na ktorú stranu má byť element zarovnaný (napr. vľavo alebo vpravo).
+display - Nastavuje spôsob, ako sa element zobrazí (napr. ako blokový alebo riadkový element).
+-->
+<body>
+  <p style="color:red">toto je text cervenou farbou</p>
+  <p style="font-family:'Arial Black';color:blue">Toto je text vypisany fontom arial black modrou farbou</p>
+  <p style="font-size:25px">toto je text velkosti 25px</p>
+  <p style="background-color:darkorange"> text s oranzovym pozadim</p>
+  <p style="margin-top:150px">nejaky text</p>
+
+    <div style="background-color:crimson; width:400px; height:300px">
+      <!--div sluzi na to aby sme donho ulozili rozny obsah-->
+    <p>prvy kontajner (div)</p>
+    <img src="Slovakia_general_relief_map.svg.png" style="width:50%; height:50%; margin-left:40px" alt="mapa slovenska" >
+  </div>
+
+  <div style="background-color:#21dc14; width:400px; height:300px; margin-top:0px">
+  <p style="padding:40px">druhy kontajner </p>
+  </div>
+
+  <div style="background-color:#254a81; width:400px; height:300px">
+  <p style="padding: 40px 50px 60px 70px">treti kontajner</p>
+  </div>
+
+  <p style="border: 1px solid black;">text oramovany</p>
+
+  <p style="border-width: 1px; border-style: solid; border-color: black;">text oramovany pouzitim jednot. css border prikazov</p>
+
+  <div style="text-align: center; background-color: chocolate; margin-top: -20px">
+  <p>vycentrovany text</p>
+  <img src="Slovakia_general_relief_map.svg.png" alt="mapa slovenska" style="width:50%; height:50%;">
+  </div>
+
+  <div>
+      <div style="background-color: red; width:250px; height: 250px; float: right">
+        prvy kontajner
+      </div>
+
+      <div style="background-color: green; width:250px; height: 250px; float: right">
+        druhy kontajner
+      </div>
+
+      <div style="background-color: blue; width:250px; height: 250px; float: right">
+        treti kontajner
+      </div>
+  </div>
+
+  <!--vyresetujem poziciu pre dalsi element na stranke-->
+
+  <br style="clear: both;">
+
+  <!--pevna medzera je reprezentovana HTML entitou &nbsp-->
+
+  <p style="">Toto je 5 medzier &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; za ktorými pokračuje tento text.</p>
+
+</body>
+</html>
